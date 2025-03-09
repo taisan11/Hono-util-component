@@ -1,7 +1,7 @@
 {
   "name": "@taisan11/hono-util-component",
   "version": "0.1.0",
-  "exports": "",
+  "exports": "./src/mod.ts",
   "tasks": {
     "dev": "deno test --watch"
   },
