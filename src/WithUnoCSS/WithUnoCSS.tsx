@@ -12,7 +12,7 @@ export const ensureTrailngSlash = (path: string) => {
  * Only HonoX or vite mode
  * No support dist-chunk
  */
-export default function WithUnoCSS(props: Props) {
+export default function WithUnoCSS(props: Props): JSX.Element {
     const { script,...rest } = props
     if (import.meta.env.PROD) {
         let manifest: Manifest | undefined = undefined
@@ -38,7 +38,7 @@ export default function WithUnoCSS(props: Props) {
                 ></link>
             )
         }
-        return manifest ? (<link href={cssfile} rel="stylesheet" {...rest}></link>) : null
+        return manifest ? (<link href={cssfile} rel="stylesheet" {...rest}></link>) : <></>
     }
     return <></>
 }
