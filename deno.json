@@ -7,7 +7,8 @@
   },
   "license": "MIT",
   "imports": {
-    "hono": "npm:hono@^4.7.2"
+    "hono": "npm:hono@^4.7.2",
+    "vite": "npm:vite@^6.2.1"
   },
   "compilerOptions": {
     "jsx": "precompile",
